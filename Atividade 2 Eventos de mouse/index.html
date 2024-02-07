@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<style>
+    div#area{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20pt;
+        background-color: cornflowerblue;
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+    button{
+        background-color: cornflowerblue;
+        color: white;
+        border-radius: 5px;
+        padding: 3px ;
+        border: 2px solid gray;
+    }
+</style>
+<body>
+    <h1>A seguir DOM...</h1>
+    <div id="area" onclick="intaratividade()" onmouseenter="entrar()" onmouseout="saiu()">
+        interaja..
+    </div>
+    <h2>Somando Valores</h2>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <button id="butao" onclick="soma()">Somar</button>
+    <span id="resu">:Resultado</span>
+    <br>
+    <p id="fatiado">Aqui uso só para mudar o id</p>
+    <script src="app2.js"></script>
+</body>
+</html>
