@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch day</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #f0f0f0; 
+            margin: 0;
+            padding: 20px;
+        }
+        input, button{
+            margin: 10px 0; 
+            padding: 15px; 
+            font-size: 20px; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+            transition: all 0.3s; 
+        }
+        input:focus, button:hover{
+            border-color: #2b2d30; 
+            box-shadow: 0 2px 8px rgba(84, 98, 112, 0.2); 
+        }
+        button{
+            background-color: gray;
+            color: white; 
+            cursor: pointer; 
+            font-weight: bold; 
+        }
+        button:hover{
+            background-color: darkslategray; 
+        }
+        .imagem-responsiva {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Switch de dias da semana</h1>
+    <button onclick="notifica()">Mostre o dia da semana de Hoje</button>
+    <br><br>
+    <input type="text" placeholder="Digite um dia da semana." id="week">
+    <button onclick="verificar()">Verificar</button>
+    <h2 id="info"></h2>
+    <script src="Switch.js/scriptat2.js"></script>
+</body>
+</html>
