@@ -1,0 +1,58 @@
+/* Reset básico para remover margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #333; 
+    background-color: #BBE3C0; 
+}
+
+header {
+    background-color: #333; 
+    color: #6FE37F; 
+    text-align: center; 
+    padding: 20px 0; 
+}
+
+section {
+    padding: 20px; 
+    margin: 20px 0; 
+}
+
+div {
+    background-color: #dddddda3; 
+    margin: 10px 0; /* Margem externa para separar divs */
+    padding: 10px; /* Espaçamento interno nas divs */
+}
+div > select{
+    width: 1200px;
+    font-size: large;
+}
+#tabu{
+    height: 30px;
+    width: 800px;
+    font-weight: bold;
+    color: #D93240;
+}
+#butão{
+    padding: 5px;
+    height: 30px;
+    background-color: #333;
+    color: #6FE37F; 
+    font-size: 0.8em;
+}
+footer {
+    background-color: #333; 
+    color: #6FE37F; 
+    text-align: center; 
+    padding: 10px 0; 
+}
+
+footer em strong {
+    color: #6FE37F; 
+}
