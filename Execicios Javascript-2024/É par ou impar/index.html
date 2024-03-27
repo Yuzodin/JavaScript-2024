@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou ìmpar</title>
+</head>
+<style>
+    body{
+        text-align: center; 
+    }
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    button{
+        padding: 25px;
+        font-size: large;
+        background-color: black;
+        color: #fff;
+    }
+    input{
+        display: block;
+        margin: auto;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+
+    }
+    p{
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <h1>O número é par ou ímpar?</h1>
+    <input type="number" placeholder="Digite um numero" id="resultado"><br>
+    <button onclick="parouimpar()">Click aqui para iniciar</button>
+    <p id="texto">O resultado sai aqui..</p>
+
+    <script>
+        function parouimpar(){
+            let num = Number(document.getElementById('resultado').value)
+            if (num % 2 == 0){
+                document.getElementById('texto').innerHTML = `O número ${num} é <strong>É PAR</strong>`
+            }
+            else{
+               document.getElementById('texto').innerHTML = `O número ${num} é <strong>É ÍMAPR</strong>`
+            }
+        }
+    </script>
+</body>
+</html>

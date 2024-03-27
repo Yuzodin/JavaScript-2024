@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    padding: 35px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    background-color: crimson;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}

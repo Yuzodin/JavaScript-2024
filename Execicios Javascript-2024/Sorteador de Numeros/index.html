@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button#b1{
+            padding: 10px;
+            background-color: green;
+            border: 2px solid black;
+            font-size: 1.1em;
+        }
+        button#b2{
+            padding: 10px;
+            background-color: red;
+            border: 2px solid black;
+            font-size: 1.1em;   
+        }
+        mark{
+            background-color: green;
+        }
+    </style>
+    <title>Sorteador de números</title>
+</head>
+<body>
+    <h1>Gerador de números</h1>
+    <button onclick="gera()" id="b1">-- Iniciar --</button>
+    <button onclick="para()" id="b2">-- Limpar --</button>
+    <p id="texto"></p>
+    <script>
+        function gera(){
+            let max = 100
+            let min = 1
+            let dif = max - min
+            //const aletorio = Math.floor(Math.random(max - min + 1)) + min
+            const aletorio = Math.floor(Math.random() * (max - min + 1)) + min
+
+            document.getElementById('texto').innerHTML += `Acabei de pensar no número <mark>${aletorio}</mark> <br> <br>`
+        }
+
+        function para(){
+            document.getElementById('texto').innerHTML = null
+        }
+    </script>
+</body>
+</html>

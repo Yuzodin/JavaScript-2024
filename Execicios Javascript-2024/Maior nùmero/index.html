@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior entre dois</title>
+</head>
+<style>
+    body{
+        text-align: center; 
+    }
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+        color: darkmagenta;
+    }
+    button{
+        padding: 25px;
+        font-size: large;
+        background-color: darkmagenta;
+        border: darkmagenta;
+        color: #fff;
+    }
+    input{
+        display: block;
+        margin: auto;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+        color: darkmagenta;
+
+    }
+    p{
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkmagenta;
+    }
+</style>
+<body>
+    <h1>Maior Valor</h1>
+    <input type="number" placeholder="Digite um numero" id="resultado"><br>
+    <input type="number" placeholder="Digite o segundo numero" id="resu"><br>
+    <button onclick="maior()">Click aqui para começar</button>
+    <p id="texto">O resultado sai aqui..</p>
+
+    <script>
+        function maior(){
+            var v1 = Number(document.getElementById('resultado').value)
+            var v2 = Number(document.getElementById('resu').value)
+            if(v1 > v2 ){
+                document.getElementById('texto').innerHTML = `Analisando os valores ${v1} e ${v2}, o maior valor é ${v1}`
+            }
+            else if(v1 == v2 ){
+                document.getElementById('texto').innerHTML = `Analisando os valores ${v1} e ${v2}, percebe-se que ambos são iguais`
+            }else if(v1 < v2){
+                document.getElementById('texto').innerHTML = `Analisando os valores ${v1} e ${v2}, o maior valor é ${v2}`
+            }
+        }
+    </script>
+</body>
+</html>

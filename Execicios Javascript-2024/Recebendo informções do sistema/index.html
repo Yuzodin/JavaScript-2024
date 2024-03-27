@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recebendo Informaçoes</title>
+    <style>
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button{
+            padding: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;
+            background-color: green;
+            border: 2px solid black;
+            border-radius: 9999px;
+        }
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Recenbendo Informações do Sistema</h1>
+    <button onclick="exercutar()">Click aqui informações</button>
+    <p id="infos">Informações vindas do Sistema</p>
+    <script>
+        function exercutar(){
+            let now = new Date
+            let resul = document.getElementById('infos').innerHTML = `As informações que eu recebi do sistema foram <strong>${now}</strong>`
+        }
+    </script>
+</body>
+</html>

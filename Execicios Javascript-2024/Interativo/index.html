@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interativo</title>
+</head>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        button{
+            padding: 35px;
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: yellow;
+        }
+        p{
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+<body>
+    <h1>Trabalando com Interativa</h1>
+    <button onclick="resultado()">Starting Point</button>
+    <p id="teste">O resultado sai aqui..</p>
+    <script>
+        console.log('A vida é um teste, test drive!')
+        function resultado(){
+            let nome = prompt('Qual seu nome? Meu nobre:')
+            document.getElementById('teste').innerHTML = `Olá ${nome} é um grande prazer te conhecer! 🖖`
+        }
+    </script>
+</body>
+</html>

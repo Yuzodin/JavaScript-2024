@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O estudante</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    h1{
+        font-family: cursive;
+    }
+    button{
+        font-size: 1.4em;
+        padding: 10px;
+        width: 150px;
+        height: 60px;
+    }
+    input{
+        width: 250px;
+    }
+    p{
+        font-size: large;
+    }
+</style>
+<body>
+    <h1>Média do Aluno 2.0</h1>
+    <input type="text" id="nome" placeholder="Nome do aluno.."><br><br>
+    <input type="number" id="n1" placeholder="Nota 1 do aluno">
+    <input type="number" id="n2" placeholder="Nota 2 do aluno"><br><br>
+    <button onclick="calcular()">Calcular</button>
+    <p id="resu"></p>
+    <p id="notas">O resultado sai aqui</p>
+    <p id="msg"></p>
+</body>
+<script src="app.js"></script>
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-color: rgba(220, 220, 220, 0.63);
+}
+main{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    margin: auto;
+    color: purple;
+    border-radius: 15px;
+    box-shadow: 5px 5px 75px rgba(0, 0, 0, 0.353);
+}
+h1{
+    padding: 15px;
+    color: goldenrod;
+}
+h2{
+    background-color: rgba(128, 0, 128, 0.704);
+    border-radius: 5px;
+    border: 2px solid goldenrod;
+    color: goldenrod;
+}
+li>a{
+    color: goldenrod;
+    font-weight: bolder;
+
+}
