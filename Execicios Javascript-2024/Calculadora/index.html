@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
+        }
+        h1{
+            color: lightseagreen;
+            font-size: 3.0em;
+        }
+        h2{
+            color: lightseagreen;
+            font-size: 1.8;
+        }
+        input{
+            width: 270px;
+            padding: 8px;
+            font-size: large;
+            text-align: center;
+        }
+        button{
+            padding: 15px;
+            background-color: lightseagreen;
+            font-size: large;
+            border-radius: 999px;
+            border: none;
+        }
+        p{
+            color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calcutron</h1>
+    <h2>Primeiro Valor</h2>
+    <input type="number" id="n1" placeholder="Digite o primeiro valor">
+    <h2>Segundo Valor</h2>
+    <input type="number" id="n2" placeholder="Digite o segundo valor"><br><br>
+    <button onclick="chama()">== Iniciar ==</button><br>
+    <p id="calculo">Calculando..</p>
+
+    <script>
+        function chama(){
+
+            let nu1 = Number(document.getElementById('n1').value)
+            let nu2 = Number(document.getElementById('n2').value)
+            let op = Number(prompt(`Com os valores ${nu1} e ${nu2} inseridos o que deseja fazer agora: 
+        [1] soma 
+        [2] subtração 
+        [3] multiplicação 
+        [4] divisão`))
+
+        switch (op) {
+            case 1:
+                document.getElementById('calculo').innerHTML = `O resultado é ${nu1} + ${nu2} = <strong>${nu1 + nu2}</strong>` 
+                break
+            case 2:
+            document.getElementById('calculo').innerHTML = `O resultado é ${nu1} - ${nu2} = <strong>${nu1 - nu2}</strong>` 
+                break
+            case 3:
+            document.getElementById('calculo').innerHTML = `O resultado é ${nu1} x ${nu2} = <strong>${nu1 * nu2}</strong>` 
+                break  
+            case 4:
+            document.getElementById('calculo').innerHTML = `O resultado é ${nu1} / ${nu2} = <strong>${nu1 / nu2}</strong>` 
+                break 
+            default:
+            document.getElementById('calculo').innerHTML = `OPÇÃO INVÁLIDA! tente novamente!` 
+                break           
+        }
+        }
+
+    </script>
+</body>
+</html>

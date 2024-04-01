@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+h1{
+    font-family:  fantasy;
+    color: goldenrod;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: goldenrod;
+    font-size: large;
+}
+input{
+    width: 350px;
+    padding: 5px;
+    color: goldenrod;
+    outline: none;
+    border: goldenrod;
+    font-size: large;
+}
+button{
+    padding: 5px;
+    background-color: transparent;
+    color: goldenrod;
+}
